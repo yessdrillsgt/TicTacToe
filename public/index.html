@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+        <!-- Custom styles for this template -->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+	
+    <body>
+        <div class="container">
+			<div id="ttt-container" class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+				<div id="ttt-header">Tic-Tac-Toe</div>
+				
+				<div class="row win-loss-tie">
+					<div id="win" class="col-xs-4"></div>
+					<div id="loss" class="col-xs-4"></div>
+					<div id="tie" class="col-xs-4"></div>	
+				</div>
+				
+				<div id="userPreferences" class="row">
+					<div class="col-xs-4 form-group">
+						<label for="group_XorO">Play as:</label>
+						<br>
+						<div id="group_XorO" class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+								<input type="radio" name="XorO" id="rb_X">X
+							</label>
+							<label class="btn btn-primary active">
+								<input type="radio" name="XorO" id="rb_O">O
+							</label>
+						</div>
+					</div>
+					<div class="col-xs-4 form-group">
+						<label for="group_turn">Turn:</label>
+						<br>
+						<div id="group_turn" class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+								<input type="radio" name="FirstOrSecond" id="rb_first">1st
+							</label>
+							<label class="btn btn-primary active">
+								<input type="radio" name="FirstOrSecond" id="rb_second">2nd
+							</label>
+						</div>
+					</div>
+					<div class="col-xs-4 form-group">
+						<label for="group_difficulty">Difficulty:</label>
+						<br>
+						<div id="group_difficulty" class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+								<input type="radio" name="EasyOrHard" id="rb_easy">Easy
+							</label>
+							<label class="btn btn-primary active">
+								<input type="radio" name="EasyOrHard" id="rb_hard">Hard
+							</label>
+						</div>
+					</div>		
+				</div>
+				
+				<div class="row">
+					<input id="btn_newMatch" type="button" class="btn btn-primary" value="New Match" />
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+					<div class="col-xs-4 ttt-square">
+						<div class="ttt-square-contents"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+        <!-- JQuery Plugin -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		
+		<!-- JQuery UI Plugin -->
+		<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+		<!-- Bootstrap JS Plugin -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>
+    </body>
+</html>
