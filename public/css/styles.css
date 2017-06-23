@@ -13,20 +13,16 @@ body {
 }
 
 #ttt-container {
-	margin-top: 10%;
 	text-align: center;
 }
 
 #ttt-header {
 	font-family: lionKing;
-	font-size: 4.0em;
 	color: rgb(240, 240, 240); /* white(ish) */
 }
 
 .win-loss-tie {
 	font-family: digital;
-	font-size: 1.75em;
-	margin-bottom: 1em;
 	color: rgb(240, 240, 240); /* white(ish) */
 }
 
@@ -41,7 +37,6 @@ body {
 
 .ttt-square {
 	background-color: rgb(240, 240, 240); /* white(ish) */
-	height: 10em;
 	border-style: solid;
 	border-color: black;
 }
@@ -54,43 +49,88 @@ body {
 	background-color: rgb(168, 255, 185); /* light green */
 }
 
-.ttt-square-contents {
-	font-size: 7em;
-}
-
 /*==========  Mobile First Method  ==========*/
 
 /* Extra Small Mobile Devices */ 
 @media only screen and (min-width : 320px) {
+	#ttt-container {
+		margin-top: 5%;
+	}
+
+	#ttt-header {
+		font-size: 2.25em;
+	}
+
+	.win-loss-tie {
+		font-size: 1.75em;
+		margin-bottom: 0.25em;
+	}
 	
-}
-
-/* Large Mobile Devices */
-@media only screen and (min-width : 425px) {
+	.form-group > label {
+		font-size: 0.9em;
+	}
 	
-}
+	.ttt-square {
+		height: 3.75em;
+	}
 
-/* Extra-Large Mobile Devices */
-@media only screen and (min-width : 480px) {
-
+	.ttt-square-contents {
+		font-size: 2.5em;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	#ttt-container {
+		margin-top: 5%;
+	}
+
+	#ttt-header {
+		font-size: 5em;
+	}
+
+	.win-loss-tie {
+		font-size: 3em;
+		margin-bottom: 0.25em;
+	}
 	
+	.form-group > label {
+		font-size: 1.5em;
+	}
+	
+	.ttt-square {
+		height: 10em;
+	}
+
+	.ttt-square-contents {
+		font-size: 7em;
+	}
 }
 
 /* Medium Devices, Desktops - No minimum height */
 @media only screen and (min-width : 972px){
-	
-}
+	#ttt-container {
+		margin-top: 2.5%;
+	}
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	
-}
+	#ttt-header {
+		font-size: 4em;
+	}
 
-/* Extra-Large Devices, Wide Screens */
-@media only screen and (min-width : 1300px) {
+	.win-loss-tie {
+		font-size: 2.5em;
+		margin-bottom: 0.25em;
+	}
 	
+	.form-group > label {
+		font-size: 1.5em;
+	}
+	
+	.ttt-square {
+		height: 8em;
+	}
+
+	.ttt-square-contents {
+		font-size: 6em;
+	}
 }

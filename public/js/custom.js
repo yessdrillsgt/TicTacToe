@@ -224,9 +224,7 @@ $(document).ready(function(){
 				
 			} else { // use minimax algorithm to find next optimized move
 				MiniMaxAlgorithm(Get_currentState(), 0, false); // updates aiOptIndex variable utilizing minimax algorithm for AIs best next move
-				alert(aiOptIndex);
 				$cell.eq(aiOptIndex).text(aiVal);
-				
 				
 				if ( CheckForWin( false, Get_currentState() ) ){ // win
 					PerformWinOperations(aiVal);
